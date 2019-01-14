@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    printf("Hello, B_project\n");
+
+    printf("HELLO Fucking project\n");
     return 0;
 }
