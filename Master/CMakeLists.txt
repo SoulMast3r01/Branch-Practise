@@ -1,6 +1,21 @@
 cmake_minimum_required(VERSION 3.12)
-project(Master C)
+project(Master)
 
-set(CMAKE_C_STANDARD 99)
+set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Master main.c)
+include_directories(.idea)
+include_directories(cmake-build-debug)
+
+add_executable(Master
+        .idea/codeStyles/Project.xml
+        .idea/Master.iml
+        .idea/misc.xml
+        .idea/modules.xml
+        .idea/vcs.xml
+        .idea/workspace.xml
+        cmake-build-debug/cmake_install.cmake
+        cmake-build-debug/CMakeCache.txt
+        cmake-build-debug/Makefile
+        cmake-build-debug/Master.cbp
+        CMakeLists.txt
+        main.c)
